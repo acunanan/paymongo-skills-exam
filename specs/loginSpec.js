@@ -10,6 +10,8 @@ describe('Paymongo - Login Page', function() {
         verifications.checkIfElementIsPresent(loginPage.buttonSignIn)
         verifications.checkIfElementIsPresent(loginPage.txtFieldEmailAddress)
         verifications.checkIfElementIsPresent(loginPage.txtFieldPassword)
+        verifications.checkIfElementIsPresent(loginPage.buttonSignIn)
+        verifications.checkIfElementIsPresent(loginPage.linkForgotPassword)
     })
     it('Should enter email address', function() {
         actions.enterText(loginPage.txtFieldEmailAddress, browser.params.login.email)
