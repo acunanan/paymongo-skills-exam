@@ -9,4 +9,4 @@
 2. run npm install in command line
 
 #running the test
-1. npm run <scripts package.json>
+1. npm run [scripts to run from package.json]
