@@ -22,7 +22,7 @@ exports.config = {
     //chromeDriver:'./chromedriver',
     baseUrl: 'https://dashboard.paymongo.com/login',
     suites: {
-        login: 'specs/loginSpec.js'
+        activate: 'specs/activateSpec.js'
     },
     capabilities: {
         browserName: 'chrome',
@@ -81,8 +81,8 @@ exports.config = {
 
     params: {
         login: {
-            email: 'default',
-            password: 'default'
+            email: 'acunanan1890@gmail.com',
+            password: 'tEsting1'
         },
         isLoggedIn: false
     }

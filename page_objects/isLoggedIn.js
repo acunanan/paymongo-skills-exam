@@ -9,6 +9,11 @@ var isLoggedIn = function () {
         console.log('Login as user: ' + browser.params.login.email)
         browser.ignoreSynchronization = true;
         loginPage.goTo();
+        actions.enterText(loginPage.txtFieldEmailAddress, browser.params.login.email)
+        verifications.checkIfElementIsNotEmpty(loginPage.txtFieldEmailAddress)
+        actions.enterText(loginPage.txtFieldPassword, browser.params.login.password)
+        verifications.checkIfElementIsNotEmpty(loginPage.txtFieldPassword)
+        actions.clickElement(loginPage.buttonSignIn)
     }
 }
 
