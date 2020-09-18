@@ -2,7 +2,7 @@
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 var HtmlReporter = require("protractor-beautiful-reporter");
 var jasmineReporters = require('jasmine-reporters');
-//const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer');
 
 
 exports.config = {
@@ -28,7 +28,7 @@ exports.config = {
         browserName: 'chrome',
         chromeOptions: {
             args: [
-                //'--headless',
+                '--headless',
                 '--disable-gpu',
                 '--no-sandbox',
                 '--disable-dev-shm-usage',
@@ -43,7 +43,7 @@ exports.config = {
                 "--use-fake-device-for-media-stream"
             ],
             w3c: false,
-            //binary: puppeteer.executablePath()
+            binary: puppeteer.executablePath()
         }
     },
 
