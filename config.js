@@ -19,7 +19,7 @@ exports.config = {
     },
     allScriptsTimeout: 240000,
     directConnect: true,
-    //chromeDriver:'./chromedriver',
+    chromeDriver:'./chromedriver',
     baseUrl: 'https://dashboard.paymongo.com/login',
     suites: {
         activate: 'specs/activateSpec.js'
