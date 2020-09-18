@@ -3,9 +3,8 @@ let activatePage = require('../page_objects/activatePage')
 let isLoggedIn = require('../page_objects/isLoggedIn')
 let actions = require('../page_objects/utilities/actions')
 let verifications = require('../page_objects/utilities/verifications')
-const { buttonContinueBusinessInfo } = require('../page_objects/activatePage')
 
-describe('Paymongo - Activate Page', function() {
+describe('PayMongo - Activate Page', function() {
     it('should login if user is still not signed-in', function() {
         if (browser.params.isLoggedIn == false) {
             isLoggedIn.loginToPaymongo();
