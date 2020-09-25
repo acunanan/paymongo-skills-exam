@@ -1,7 +1,5 @@
 "use strict";
 
-const { element } = require("protractor");
-
 let EC = protractor.ExpectedConditions;
 var activatePage = function() { 
     
